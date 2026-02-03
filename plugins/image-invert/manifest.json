@@ -25,7 +25,7 @@
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-invert-v1.0.0/image-invert-1.0.0-linux-x86_64.tar.gz",
-          "sha256": "a6f6d9d44b7d38e0d75da0b022035d338e002579887ca3a81c1fe6df0f36e93e"
+          "sha256": "25cebede4f96d845a3f640321ee754cc4cc4a32e09477de221d5c6e54c6090fb"
         }
       }
     }
