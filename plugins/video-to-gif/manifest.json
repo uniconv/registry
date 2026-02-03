@@ -46,7 +46,7 @@
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/video-to-gif-v1.0.0/video-to-gif-1.0.0-linux-x86_64.tar.gz",
-          "sha256": "a4874641ae5de84e71ed6964d20418daf906722c1a4b4c0b2b677fcd619e9403"
+          "sha256": "23a4bfe8665c6bc73d92c28507fd7f0fb0aa976a20d10da0fd0781bce77deee0"
         }
       }
     }
