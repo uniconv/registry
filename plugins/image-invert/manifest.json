@@ -15,17 +15,11 @@
       "version": "1.0.0",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
-      "dependencies": [
-        {
-          "name": "libvips",
-          "type": "system",
-          "check": "ldconfig -p | grep -q libvips"
-        }
-      ],
+      "dependencies": [],
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-invert-v1.0.0/image-invert-1.0.0-linux-x86_64.tar.gz",
-          "sha256": "5ba2f9a1fa4574a7f6a747a69a8afd3c8312a2d5fbf40caeb03fed914afa42b5"
+          "sha256": "2ff0abb31696c266b9661dda3c34eb152d2fa3ca85668fa6266a1206aba4d076"
         }
       }
     }
