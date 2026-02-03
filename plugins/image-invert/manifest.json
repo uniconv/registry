@@ -17,15 +17,15 @@
       "interface": "native",
       "dependencies": [
         {
-          "name": "libvips-dev",
+          "name": "libvips",
           "type": "system",
-          "check": "pkg-config --exists vips-cpp"
+          "check": "ldconfig -p | grep -q libvips"
         }
       ],
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-invert-v1.0.0/image-invert-1.0.0-linux-x86_64.tar.gz",
-          "sha256": "25cebede4f96d845a3f640321ee754cc4cc4a32e09477de221d5c6e54c6090fb"
+          "sha256": "14e14ac01c3686d96f88a63075a846c6b31d2775e6c687c52bc03f5f8b5f7d44"
         }
       }
     }
