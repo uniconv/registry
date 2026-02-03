@@ -1,5 +1,59 @@
-{                                                                                                                   
+{
   "version": 1,
-  "updated_at": "2026-02-03T12:00:00Z",
-  "plugins": []
-}  
+  "updated_at": "2026-02-04T00:00:00Z",
+  "plugins": [
+    {
+      "name": "image-ascii",
+      "description": "Convert images to ASCII art using Python/Pillow",
+      "keywords": [
+        "image",
+        "ascii",
+        "text",
+        "art",
+        "python"
+      ],
+      "latest": "1.0.0",
+      "author": "uniconv",
+      "interface": "cli"
+    },
+    {
+      "name": "image-grayscale",
+      "description": "Convert images to grayscale using Python/Pillow",
+      "keywords": [
+        "image",
+        "grayscale",
+        "filter",
+        "python"
+      ],
+      "latest": "1.0.0",
+      "author": "uniconv",
+      "interface": "cli"
+    },
+    {
+      "name": "image-invert",
+      "description": "Invert image colors (native C++ plugin)",
+      "keywords": [
+        "image",
+        "invert",
+        "negative",
+        "filter"
+      ],
+      "latest": "1.0.0",
+      "author": "uniconv",
+      "interface": "native"
+    },
+    {
+      "name": "video-to-gif",
+      "description": "Convert video files to animated GIF using ffmpeg",
+      "keywords": [
+        "video",
+        "gif",
+        "animation",
+        "ffmpeg"
+      ],
+      "latest": "1.0.0",
+      "author": "uniconv",
+      "interface": "native"
+    }
+  ]
+}
