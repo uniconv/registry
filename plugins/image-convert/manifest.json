@@ -15,6 +15,32 @@
   ],
   "releases": [
     {
+      "version": "1.0.2",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libvips-dev",
+          "type": "system",
+          "check": "pkg-config --exists vips-cpp"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.2/image-convert-1.0.2-linux-x86_64.tar.gz",
+          "sha256": "7e4f03e8ae022e930a5ede148e64baa68142993dee283560e497685ac76a1da2"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.2/image-convert-1.0.2-linux-aarch64.tar.gz",
+          "sha256": "2a4d574f120d15b8f1e8d13001b966d6fd006edc297781b0932c388a103069c3"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.2/image-convert-1.0.2-darwin-aarch64.tar.gz",
+          "sha256": "e425d3ae009a984c97fb090d6190339f8c561f159be3be7ded3068544f37a667"
+        }
+      }
+    },
+    {
       "version": "1.0.1",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
