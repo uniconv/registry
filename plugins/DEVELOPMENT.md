@@ -66,13 +66,13 @@ Every plugin requires a `plugin.json` manifest:
 
 ```json
 {
-  "name": "image-grayscale",
-  "group": "image-grayscale",
+  "name": "image-filter",
+  "scope": "image-filter",
   "version": "1.0.0",
-  "description": "Convert images to grayscale",
+  "description": "Apply image filters (grayscale, invert)",
   "interface": "cli",
-  "executable": "grayscale.py",
-  "targets": ["grayscale", "gray", "bw"],
+  "executable": "image_filter.py",
+  "targets": ["grayscale", "gray", "bw", "invert", "negative"],
   "input_formats": ["jpg", "jpeg", "png", "webp", "bmp", "gif"],
   "input_types": ["image", "file"],
   "output_types": ["image"],
@@ -96,7 +96,7 @@ Every plugin requires a `plugin.json` manifest:
 | Field | Required | Description |
 |-------|----------|-------------|
 | `name` | yes | Unique plugin identifier |
-| `group` | no | Plugin group (defaults to `name`) |
+| `scope` | no | Plugin scope (defaults to `name`) |
 | `version` | no | Semver string (defaults to `"0.0.0"`) |
 | `description` | no | Human-readable description |
 | `interface` | yes | `"cli"` or `"native"` |
@@ -324,7 +324,7 @@ static UniconvDataType out_types[] = {UNICONV_DATA_IMAGE, (UniconvDataType)0};
 
 static UniconvPluginInfo info = {
     .name = "my-native-plugin",
-    .group = "my-native-plugin",
+    .scope = "my-native-plugin",
     .version = "1.0.0",
     .description = "Does something with images",
     .targets = targets,
@@ -647,13 +647,39 @@ The local `plugin.json` is what ships inside the tarball. The registry `manifest
 
 ---
 
+## Collections
+
+The registry supports **collections** — named sets of plugins that can be installed together. Users install collections with the `+` prefix:
+
+```bash
+uniconv plugin install +essentials
+```
+
+Collections are defined in `collections.json` at the registry root:
+
+```json
+{
+  "version": 1,
+  "collections": [
+    {
+      "name": "essentials",
+      "description": "Essential plugins for common media operations",
+      "plugins": ["ascii", "image-filter", "video-convert"]
+    }
+  ]
+}
+```
+
+When a collection is installed, uniconv fetches the collection definition and installs each member plugin from the registry individually.
+
+---
+
 ## Examples
 
 Working examples are in the `examples/` directory:
 
 | Example | Language | Type | Description |
 |---------|----------|------|-------------|
-| `python/image-grayscale` | Python | CLI | Image grayscale conversion with Pillow |
-| `python/image-ascii` | Python | CLI | Image to ASCII art with Pillow |
-| `cpp/image-invert` | C++ | Native | Image color inversion with libvips |
-| `cpp/video-to-gif` | C++ | Native | Video to GIF with FFmpeg |
+| `ascii` | Python | CLI | Media to ASCII art with Pillow |
+| `image-filter` | Python | CLI | Image filters (grayscale, invert) with Pillow |
+| `video-convert` | C++ | Native | Video format conversion with FFmpeg |

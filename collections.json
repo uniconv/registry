@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "name": "essentials",
+      "description": "Essential plugins for common media operations",
+      "plugins": ["ascii", "image-filter", "video-convert", "image-convert"]
+    }
+  ]
+}

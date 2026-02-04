@@ -1,13 +1,14 @@
 {
-  "name": "image-ascii",
-  "description": "Convert images to ASCII art using Python/Pillow",
+  "name": "image-filter",
+  "description": "Apply image filters (grayscale, invert) using Python/Pillow",
   "author": "uniconv",
   "license": "MIT",
   "repository": "https://github.com/uniconv/plugins",
   "keywords": [
     "image",
-    "ascii",
-    "text-art",
+    "grayscale",
+    "invert",
+    "filter",
     "conversion"
   ],
   "releases": [
@@ -29,8 +30,8 @@
       ],
       "artifact": {
         "any": {
-          "url": "https://github.com/uniconv/plugins/releases/download/image-ascii-v1.0.0/image-ascii-1.0.0.tar.gz",
-          "sha256": "fcb93f18920ebb909b97a79e436bc9590c07e918ec707ad040d6460c613ef069"
+          "url": "https://github.com/uniconv/plugins/releases/download/image-filter-v1.0.0/image-filter-1.0.0.tar.gz",
+          "sha256": "6f5111b6779fc185f91e3d43b064594aaab39418a3bdd6f0ee8fcd2ca34a55de"
         }
       }
     }

@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-02-04T00:00:00Z",
+  "updated_at": "2026-02-04T09:37:12Z",
   "plugins": [
     {
-      "name": "image-ascii",
-      "description": "Convert images to ASCII art using Python/Pillow",
+      "name": "ascii",
+      "description": "Convert media to ASCII representation",
       "keywords": [
         "image",
         "ascii",
@@ -17,11 +17,12 @@
       "interface": "cli"
     },
     {
-      "name": "image-grayscale",
-      "description": "Convert images to grayscale using Python/Pillow",
+      "name": "image-filter",
+      "description": "Apply image filters (grayscale, invert) using Python/Pillow",
       "keywords": [
         "image",
         "grayscale",
+        "invert",
         "filter",
         "python"
       ],
@@ -30,26 +31,29 @@
       "interface": "cli"
     },
     {
-      "name": "image-invert",
-      "description": "Invert image colors (native C++ plugin)",
+      "name": "video-convert",
+      "description": "Convert video formats",
       "keywords": [
-        "image",
-        "invert",
-        "negative",
-        "filter"
+        "video",
+        "gif",
+        "animation",
+        "ffmpeg"
       ],
       "latest": "1.0.0",
       "author": "uniconv",
       "interface": "native"
     },
     {
-      "name": "video-to-gif",
-      "description": "Convert video files to animated GIF using ffmpeg",
+      "name": "image-convert",
+      "description": "Image format conversion using libvips",
       "keywords": [
-        "video",
-        "gif",
-        "animation",
-        "ffmpeg"
+        "image",
+        "vips",
+        "jpg",
+        "png",
+        "webp",
+        "heic",
+        "conversion"
       ],
       "latest": "1.0.0",
       "author": "uniconv",

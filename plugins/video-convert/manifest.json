@@ -1,6 +1,6 @@
 {
-  "name": "video-to-gif",
-  "description": "Convert video files to animated GIF using FFmpeg",
+  "name": "video-convert",
+  "description": "Convert video formats",
   "author": "uniconv",
   "license": "MIT",
   "repository": "https://github.com/uniconv/plugins",
@@ -44,9 +44,13 @@
         }
       ],
       "artifact": {
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.0.0/video-convert-1.0.0-darwin-aarch64.tar.gz",
+          "sha256": "8c1dfd3928061fca4b6b4ed962920e4fd1150038abd822d53393243a690c4e2d"
+        },
         "linux-x86_64": {
-          "url": "https://github.com/uniconv/plugins/releases/download/video-to-gif-v1.0.0/video-to-gif-1.0.0-linux-x86_64.tar.gz",
-          "sha256": "08c4a518adc4256f61640d0c37bba2c2367c2ea2e1fcaa05583d5951613f2f4b"
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.0.0/video-convert-1.0.0-linux-x86_64.tar.gz",
+          "sha256": ""
         }
       }
     }
