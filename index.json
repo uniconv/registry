@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-04T15:25:04Z",
+  "updated_at": "2026-02-04T16:01:18Z",
   "plugins": [
     {
       "name": "ascii",
@@ -37,9 +37,10 @@
         "video",
         "gif",
         "animation",
+        "conversion",
         "ffmpeg"
       ],
-      "latest": "1.0.0",
+      "latest": "1.1.3",
       "author": "uniconv",
       "interface": "native"
     },
