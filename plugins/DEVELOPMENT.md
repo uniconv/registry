@@ -676,10 +676,10 @@ When a collection is installed, uniconv fetches the collection definition and in
 
 ## Examples
 
-Working examples are in the `examples/` directory:
+Working examples are in the [uniconv/plugins](https://github.com/uniconv/plugins) repository:
 
 | Example | Language | Type | Description |
 |---------|----------|------|-------------|
-| `ascii` | Python | CLI | Media to ASCII art with Pillow |
-| `image-filter` | Python | CLI | Image filters (grayscale, invert) with Pillow |
-| `video-convert` | C++ | Native | Video format conversion with FFmpeg |
+| [`ascii`](https://github.com/uniconv/plugins/tree/main/ascii) | Python | CLI | Media to ASCII art with Pillow |
+| [`image-filter`](https://github.com/uniconv/plugins/tree/main/image-filter) | Python | CLI | Image filters (grayscale, invert) with Pillow |
+| [`video-convert`](https://github.com/uniconv/plugins/tree/main/video-convert) | C++ | Native | Video format conversion with FFmpeg |
