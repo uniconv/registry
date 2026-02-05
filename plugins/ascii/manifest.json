@@ -12,6 +12,98 @@
   ],
   "releases": [
     {
+      "version": "1.0.4",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.4/ascii-1.0.4.tar.gz",
+          "sha256": "82bd5378efc8952f459d29e470e25dd5e14b884d1bb160686dd212a5d9817a06"
+        }
+      }
+    },
+    {
+      "version": "1.0.3",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.3/ascii-1.0.3.tar.gz",
+          "sha256": "622ff9094ddc8b7a770315c22bc46b835299a702f0e2312f01b202cae15c2f97"
+        }
+      }
+    },
+    {
+      "version": "1.0.2",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.2/ascii-1.0.2.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.0.1",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.1/ascii-1.0.1.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.0.0",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",

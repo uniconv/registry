@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-04T16:16:56Z",
+  "updated_at": "2026-02-05T15:45:37Z",
   "plugins": [
     {
       "name": "ascii",
@@ -8,11 +8,10 @@
       "keywords": [
         "image",
         "ascii",
-        "text",
-        "art",
-        "python"
+        "text-art",
+        "conversion"
       ],
-      "latest": "1.0.0",
+      "latest": "1.0.4",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -24,9 +23,9 @@
         "grayscale",
         "invert",
         "filter",
-        "python"
+        "conversion"
       ],
-      "latest": "1.0.0",
+      "latest": "1.0.2",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -40,7 +39,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.4",
+      "latest": "1.1.6",
       "author": "uniconv",
       "interface": "native"
     },
@@ -56,7 +55,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.3",
+      "latest": "1.0.6",
       "author": "uniconv",
       "interface": "native"
     }
