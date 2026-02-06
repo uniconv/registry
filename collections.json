@@ -4,7 +4,7 @@
     {
       "name": "essentials",
       "description": "Essential plugins for common media operations",
-      "plugins": ["ascii", "image-filter", "video-convert", "image-convert"]
+      "plugins": ["ascii", "doc-convert", "image-filter", "video-convert", "image-convert"]
     }
   ]
 }
