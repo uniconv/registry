@@ -15,6 +15,58 @@
   ],
   "releases": [
     {
+      "version": "1.0.11",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libvips",
+          "type": "system",
+          "check": "pkg-config --exists vips-cpp",
+          "install_hint": "brew install vips (macOS) or apt install libvips-dev (Linux)"
+        },
+        {
+          "name": "imagemagick",
+          "type": "system",
+          "check": "command -v convert",
+          "install_hint": "brew install imagemagick (macOS) or apt install imagemagick (Linux)",
+          "description": "Required for PDF and additional format support via libvips"
+        },
+        {
+          "name": "ghostscript",
+          "type": "system",
+          "check": "command -v gs",
+          "install_hint": "brew install ghostscript (macOS) or apt install ghostscript (Linux)",
+          "description": "Required for PDF input/output support"
+        },
+        {
+          "name": "imagemagick-pdf-delegate",
+          "type": "system",
+          "check": "convert -list delegate 2>/dev/null | grep -q pdf",
+          "install_hint": "Install ghostscript then reinstall imagemagick: brew reinstall imagemagick",
+          "description": "ImageMagick must be built with PDF delegate support. If missing, reinstall imagemagick after installing ghostscript."
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.11/image-convert-1.0.11-linux-x86_64.tar.gz",
+          "sha256": "20b590eeec9866cc35f8dd0126e89a50c03d7b08b485ce90074f0768f2f116ff"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.11/image-convert-1.0.11-linux-aarch64.tar.gz",
+          "sha256": "30f63f49db53db8932a0fc735bbbbbd4975794046a15ec241fe5725f16dee921"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.11/image-convert-1.0.11-darwin-aarch64.tar.gz",
+          "sha256": "dfd682eb58a819d42dfe866e320c0bb0a9ad732f6e6e88626fd52001022f70c5"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.11/image-convert-1.0.11-windows-x86_64.tar.gz",
+          "sha256": "617b97335fc91267e4cd3e2050ec1b62d88efccce2915ffed93874ab10151360"
+        }
+      }
+    },
+    {
       "version": "1.0.9",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
