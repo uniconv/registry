@@ -10,7 +10,10 @@ set -euo pipefail
 # Usage:
 #   ./update-plugin.sh ascii
 #   ./update-plugin.sh video-convert
+#   ./update-plugin.sh all                  # update every plugin
 #   ./update-plugin.sh ascii --dry-run
+#   ./update-plugin.sh ascii --push         # commit & push after update
+#   ./update-plugin.sh all --push --dry-run # preview what would happen
 #
 # Prerequisites:
 #   - GitHub CLI (gh) installed and authenticated
@@ -18,13 +21,14 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PLUGINS_REPO="uniconv/plugins"
 DRY_RUN=false
+PUSH=false
 
 # --- Helpers ---
 
 die() { echo "ERROR: $*" >&2; exit 1; }
 
 usage() {
-    echo "Usage: $0 <plugin-name> [--dry-run]"
+    echo "Usage: $0 <plugin-name|all> [--dry-run] [--push]"
     exit 1
 }
 
@@ -37,58 +41,66 @@ shift
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --dry-run) DRY_RUN=true ;;
+        --push)    PUSH=true ;;
         *) die "Unknown option: $1" ;;
     esac
     shift
 done
 
-# --- Step 1: Fetch manifest from plugins repo ---
+# --- update_one_plugin: Steps 1-3 for a single plugin ---
 
-echo "--- Step 1: Fetch manifest from $PLUGINS_REPO ---"
+update_one_plugin() {
+    local plugin="$1"
 
-TMPDIR=$(mktemp -d)
-trap "rm -rf $TMPDIR" EXIT
+    # --- Step 1: Fetch manifest from plugins repo ---
 
-MANIFEST_URL=$(gh api "repos/$PLUGINS_REPO/contents/$NAME/manifest.json" --jq '.download_url')
-[[ -n "$MANIFEST_URL" ]] || die "Could not find $NAME/manifest.json in $PLUGINS_REPO"
+    echo "--- Step 1: Fetch manifest from $PLUGINS_REPO ($plugin) ---"
 
-curl -sL "$MANIFEST_URL" -o "$TMPDIR/manifest.json"
+    local tmpdir
+    tmpdir=$(mktemp -d)
 
-# Extract metadata from the fetched manifest
-VERSION=$(python3 -c "import json; m=json.load(open('$TMPDIR/manifest.json')); print(m['releases'][0]['version'])")
-INTERFACE=$(python3 -c "import json; m=json.load(open('$TMPDIR/manifest.json')); print(m['releases'][0]['interface'])")
+    local manifest_url
+    manifest_url=$(gh api "repos/$PLUGINS_REPO/contents/$plugin/manifest.json" --jq '.download_url')
+    [[ -n "$manifest_url" ]] || die "Could not find $plugin/manifest.json in $PLUGINS_REPO"
 
-echo "  Plugin:    $NAME"
-echo "  Latest:    $VERSION"
-echo "  Interface: $INTERFACE"
-echo ""
+    curl -sL "$manifest_url" -o "$tmpdir/manifest.json"
 
-# --- Step 2: Update registry manifest ---
+    # Extract metadata from the fetched manifest
+    local version interface
+    version=$(python3 -c "import json; m=json.load(open('$tmpdir/manifest.json')); print(m['releases'][0]['version'])")
+    interface=$(python3 -c "import json; m=json.load(open('$tmpdir/manifest.json')); print(m['releases'][0]['interface'])")
 
-echo "--- Step 2: Update registry manifest ---"
+    echo "  Plugin:    $plugin"
+    echo "  Latest:    $version"
+    echo "  Interface: $interface"
+    echo ""
 
-REGISTRY_MANIFEST="$SCRIPT_DIR/plugins/$NAME/manifest.json"
+    # --- Step 2: Update registry manifest ---
 
-if $DRY_RUN; then
-    echo "  [dry-run] Would copy manifest to $REGISTRY_MANIFEST"
-else
-    mkdir -p "$SCRIPT_DIR/plugins/$NAME"
-    cp "$TMPDIR/manifest.json" "$REGISTRY_MANIFEST"
-    echo "  Updated: plugins/$NAME/manifest.json"
-fi
-echo ""
+    echo "--- Step 2: Update registry manifest ($plugin) ---"
 
-# --- Step 3: Update index.json ---
+    local registry_manifest="$SCRIPT_DIR/plugins/$plugin/manifest.json"
 
-echo "--- Step 3: Update index.json ---"
+    if $DRY_RUN; then
+        echo "  [dry-run] Would copy manifest to $registry_manifest"
+    else
+        mkdir -p "$SCRIPT_DIR/plugins/$plugin"
+        cp "$tmpdir/manifest.json" "$registry_manifest"
+        echo "  Updated: plugins/$plugin/manifest.json"
+    fi
+    echo ""
 
-INDEX_FILE="$SCRIPT_DIR/index.json"
-[[ -f "$INDEX_FILE" ]] || die "index.json not found: $INDEX_FILE"
+    # --- Step 3: Update index.json ---
 
-if $DRY_RUN; then
-    echo "  [dry-run] Would update $NAME in index.json (latest: $VERSION)"
-else
-    python3 -c "
+    echo "--- Step 3: Update index.json ($plugin) ---"
+
+    local index_file="$SCRIPT_DIR/index.json"
+    [[ -f "$index_file" ]] || die "index.json not found: $index_file"
+
+    if $DRY_RUN; then
+        echo "  [dry-run] Would update $plugin in index.json (latest: $version)"
+    else
+        python3 -c "
 import json, sys
 from datetime import datetime, timezone
 
@@ -135,9 +147,64 @@ index['updated_at'] = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 with open(index_path, 'w') as f:
     json.dump(index, f, indent=2)
     f.write('\n')
-" "$NAME" "$VERSION" "$INTERFACE" "$TMPDIR/manifest.json" "$INDEX_FILE"
-fi
-echo ""
+" "$plugin" "$version" "$interface" "$tmpdir/manifest.json" "$index_file"
+    fi
+    echo ""
 
-echo "=== Done: registry updated for $NAME v$VERSION ==="
-echo "  Remember to commit and push the changes."
+    echo "=== Done: registry updated for $plugin v$version ==="
+
+    rm -rf "$tmpdir"
+}
+
+# --- Main ---
+
+UPDATED_PLUGINS=()
+
+if [[ "$NAME" == "all" ]]; then
+    # Discover all plugins by listing directories under plugins/
+    for dir in "$SCRIPT_DIR/plugins"/*/; do
+        plugin=$(basename "$dir")
+        echo "========================================"
+        echo "  Updating plugin: $plugin"
+        echo "========================================"
+        echo ""
+        update_one_plugin "$plugin"
+        UPDATED_PLUGINS+=("$plugin")
+        echo ""
+    done
+else
+    update_one_plugin "$NAME"
+    UPDATED_PLUGINS+=("$NAME")
+fi
+
+# --- Step 4: Commit & push (if --push) ---
+
+if $PUSH; then
+    echo "--- Step 4: Commit & push ---"
+
+    if $DRY_RUN; then
+        if [[ "${#UPDATED_PLUGINS[@]}" -eq 1 ]]; then
+            echo "  [dry-run] Would commit: chore(${UPDATED_PLUGINS[0]}): update plugin manifest"
+        else
+            echo "  [dry-run] Would commit: chore: update plugin manifests"
+        fi
+        echo "  [dry-run] Would push to remote"
+    else
+        cd "$SCRIPT_DIR"
+        git add plugins/ index.json
+
+        commit_msg=""
+        if [[ "${#UPDATED_PLUGINS[@]}" -eq 1 ]]; then
+            commit_msg="chore(${UPDATED_PLUGINS[0]}): update plugin manifest"
+        else
+            commit_msg="chore: update plugin manifests"
+        fi
+
+        git commit -m "$commit_msg"
+        git push
+        echo "  Committed and pushed: $commit_msg"
+    fi
+    echo ""
+fi
+
+echo "=== All done ==="
