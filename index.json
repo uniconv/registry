@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-05T15:45:37Z",
+  "updated_at": "2026-02-06T01:40:39Z",
   "plugins": [
     {
       "name": "ascii",
@@ -55,9 +55,26 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.6",
+      "latest": "1.0.7",
       "author": "uniconv",
       "interface": "native"
+    },
+    {
+      "name": "doc-convert",
+      "description": "Convert between document formats using LibreOffice",
+      "keywords": [
+        "document",
+        "pdf",
+        "docx",
+        "odt",
+        "xlsx",
+        "pptx",
+        "libreoffice",
+        "conversion"
+      ],
+      "latest": "1.0.1",
+      "author": "uniconv",
+      "interface": "cli"
     }
   ]
 }
