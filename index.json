@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-06T06:34:56Z",
+  "updated_at": "2026-02-06T15:57:29Z",
   "plugins": [
     {
       "name": "ascii",
@@ -70,9 +70,10 @@
         "xlsx",
         "pptx",
         "libreoffice",
+        "hwp",
         "conversion"
       ],
-      "latest": "1.0.6",
+      "latest": "1.0.8",
       "author": "uniconv",
       "interface": "cli"
     }
