@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-06T01:40:39Z",
+  "updated_at": "2026-02-06T01:48:47Z",
   "plugins": [
     {
       "name": "ascii",
@@ -39,7 +39,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.6",
+      "latest": "1.1.8",
       "author": "uniconv",
       "interface": "native"
     },
@@ -55,7 +55,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.7",
+      "latest": "1.0.9",
       "author": "uniconv",
       "interface": "native"
     },
