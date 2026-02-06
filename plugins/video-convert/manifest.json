@@ -13,6 +13,116 @@
   ],
   "releases": [
     {
+      "version": "1.1.11",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswscale-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswscale",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswscale-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.11/video-convert-1.1.11-linux-x86_64.tar.gz",
+          "sha256": "be9240b6168be62b429670b7bef837fb699fe248e720cd3598c442a652e7c9d8"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.11/video-convert-1.1.11-linux-aarch64.tar.gz",
+          "sha256": "65304d1fbb5e17e79493fd8c5a47bd2ff518b4ed7cbff071242147ec351b04c1"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.11/video-convert-1.1.11-darwin-aarch64.tar.gz",
+          "sha256": "16a9dbe95c3d1ec7201b3544558e73ec3cb669be0291a5dcf989ab3c9ba5179d"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.11/video-convert-1.1.11-windows-x86_64.tar.gz",
+          "sha256": "640f0ea5703867665a17ea97648353bd586e1d605d9b2347f4787cac924744fa"
+        }
+      }
+    },
+    {
+      "version": "1.1.10",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswscale-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswscale",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswscale-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.10/video-convert-1.1.10-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.10/video-convert-1.1.10-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.10/video-convert-1.1.10-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.10/video-convert-1.1.10-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.1.9",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",

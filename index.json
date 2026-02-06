@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-06T04:39:50Z",
+  "updated_at": "2026-02-06T05:16:40Z",
   "plugins": [
     {
       "name": "ascii",
@@ -11,7 +11,7 @@
         "text-art",
         "conversion"
       ],
-      "latest": "1.0.5",
+      "latest": "1.0.7",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -25,7 +25,7 @@
         "filter",
         "conversion"
       ],
-      "latest": "1.0.3",
+      "latest": "1.0.5",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -39,7 +39,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.9",
+      "latest": "1.1.11",
       "author": "uniconv",
       "interface": "native"
     },
@@ -55,7 +55,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.14",
+      "latest": "1.0.16",
       "author": "uniconv",
       "interface": "native"
     },
@@ -72,7 +72,7 @@
         "libreoffice",
         "conversion"
       ],
-      "latest": "1.0.2",
+      "latest": "1.0.4",
       "author": "uniconv",
       "interface": "cli"
     }
