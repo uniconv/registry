@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-06T02:25:58Z",
+  "updated_at": "2026-02-06T04:39:50Z",
   "plugins": [
     {
       "name": "ascii",
@@ -11,7 +11,7 @@
         "text-art",
         "conversion"
       ],
-      "latest": "1.0.4",
+      "latest": "1.0.5",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -25,13 +25,13 @@
         "filter",
         "conversion"
       ],
-      "latest": "1.0.2",
+      "latest": "1.0.3",
       "author": "uniconv",
       "interface": "cli"
     },
     {
       "name": "video-convert",
-      "description": "Convert video formats",
+      "description": "Bidirectional video format conversion (mp4, mov, avi, webm, mkv, m4v, gif)",
       "keywords": [
         "video",
         "gif",
@@ -39,7 +39,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.8",
+      "latest": "1.1.9",
       "author": "uniconv",
       "interface": "native"
     },
@@ -55,7 +55,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.11",
+      "latest": "1.0.14",
       "author": "uniconv",
       "interface": "native"
     },
@@ -72,7 +72,7 @@
         "libreoffice",
         "conversion"
       ],
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "author": "uniconv",
       "interface": "cli"
     }
