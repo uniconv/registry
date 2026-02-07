@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-07T00:29:49Z",
+  "updated_at": "2026-02-07T00:39:49Z",
   "plugins": [
     {
       "name": "ascii",
@@ -73,7 +73,7 @@
         "hwp",
         "conversion"
       ],
-      "latest": "1.0.9",
+      "latest": "1.0.10",
       "author": "uniconv",
       "interface": "cli"
     }
