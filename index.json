@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-07T16:57:26Z",
+  "updated_at": "2026-02-07T16:58:06Z",
   "plugins": [
     {
       "name": "ascii",
@@ -120,6 +120,24 @@
         "decode"
       ],
       "latest": "0.0.1",
+      "author": "uniconv",
+      "interface": "cli"
+    },
+    {
+      "name": "generator",
+      "description": "Generate random test data: noise images, fake names, URLs, lorem ipsum, UUIDs, passwords, and CSV",
+      "keywords": [
+        "generator",
+        "random",
+        "noise",
+        "faker",
+        "uuid",
+        "password",
+        "csv",
+        "lorem",
+        "test-data"
+      ],
+      "latest": "1.0.0",
       "author": "uniconv",
       "interface": "cli"
     }
