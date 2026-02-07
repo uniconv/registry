@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-07T16:58:12Z",
+  "updated_at": "2026-02-07T17:14:40Z",
   "plugins": [
     {
       "name": "ascii",
@@ -11,7 +11,7 @@
         "text-art",
         "conversion"
       ],
-      "latest": "1.0.7",
+      "latest": "1.0.8",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -25,7 +25,7 @@
         "filter",
         "conversion"
       ],
-      "latest": "1.0.5",
+      "latest": "1.0.6",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -39,7 +39,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.11",
+      "latest": "1.1.12",
       "author": "uniconv",
       "interface": "native"
     },
@@ -55,7 +55,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.16",
+      "latest": "1.0.17",
       "author": "uniconv",
       "interface": "native"
     },
@@ -73,7 +73,7 @@
         "hwp",
         "conversion"
       ],
-      "latest": "1.0.10",
+      "latest": "1.0.11",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -87,7 +87,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.1",
+      "latest": "1.1.2",
       "author": "uniconv",
       "interface": "native"
     },
@@ -104,7 +104,7 @@
         "tsv",
         "conversion"
       ],
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -119,7 +119,7 @@
         "encode",
         "decode"
       ],
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -137,7 +137,7 @@
         "lorem",
         "test-data"
       ],
-      "latest": "1.0.0",
+      "latest": "1.0.1",
       "author": "uniconv",
       "interface": "cli"
     }
