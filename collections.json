@@ -4,7 +4,13 @@
     {
       "name": "essentials",
       "description": "Essential plugins for common media operations",
-      "plugins": ["doc-convert", "image-convert", "audio-convert", "video-convert"]
+      "plugins": [
+          "doc-convert",
+          "data-convert",
+          "audio-convert",
+          "image-convert",
+          "video-convert"
+      ]
     }
   ]
 }
