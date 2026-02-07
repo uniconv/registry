@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-07T00:39:49Z",
+  "updated_at": "2026-02-07T00:55:43Z",
   "plugins": [
     {
       "name": "ascii",
@@ -76,6 +76,20 @@
       "latest": "1.0.10",
       "author": "uniconv",
       "interface": "cli"
+    },
+    {
+      "name": "audio-convert",
+      "description": "Audio format conversion and audio extraction from video (mp3, wav, flac, aac, ogg, opus, m4a, wma, aiff, alac, ac3)",
+      "keywords": [
+        "audio",
+        "music",
+        "sound",
+        "conversion",
+        "ffmpeg"
+      ],
+      "latest": "1.1.0",
+      "author": "uniconv",
+      "interface": "native"
     }
   ]
 }
