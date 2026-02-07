@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-07T12:55:33Z",
+  "updated_at": "2026-02-07T16:52:28Z",
   "plugins": [
     {
       "name": "ascii",
@@ -105,6 +105,21 @@
         "conversion"
       ],
       "latest": "1.0.0",
+      "author": "uniconv",
+      "interface": "cli"
+    },
+    {
+      "name": "qr-code",
+      "description": "Generate and decode QR codes",
+      "keywords": [
+        "qr",
+        "qr-code",
+        "barcode",
+        "qrcode",
+        "encode",
+        "decode"
+      ],
+      "latest": "0.0.1",
       "author": "uniconv",
       "interface": "cli"
     }
