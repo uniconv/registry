@@ -12,6 +12,31 @@
   ],
   "releases": [
     {
+      "version": "1.0.10",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.10/ascii-1.0.10.tar.gz",
+          "sha256": "e9162779723a70df1445fedafb17cbb9d0e1ea0002dc6c5983cd5d3b32f872f9"
+        }
+      }
+    },
+    {
       "version": "1.0.9",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",
