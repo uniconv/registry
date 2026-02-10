@@ -18,6 +18,56 @@
   ],
   "releases": [
     {
+      "version": "1.0.3",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "py7zr",
+          "type": "python",
+          "description": "Required for 7z archive support (optional)",
+          "install_hint": "pip install py7zr"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/archive-v1.0.3/archive-1.0.3.tar.gz",
+          "sha256": "426ba3bae46fd0594a3af1865e061d4ff153b2ed6247ef7a3ba9bd54b0448b7c"
+        }
+      }
+    },
+    {
+      "version": "1.0.2",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "py7zr",
+          "type": "python",
+          "description": "Required for 7z archive support (optional)",
+          "install_hint": "pip install py7zr"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/archive-v1.0.2/archive-1.0.2.tar.gz",
+          "sha256": "a47b0187d30d96ad99a885b7bcf64e823d165e10742bddd41117eba1886565b0"
+        }
+      }
+    },
+    {
       "version": "1.0.1",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",

@@ -12,6 +12,56 @@
   ],
   "releases": [
     {
+      "version": "1.0.12",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.12/ascii-1.0.12.tar.gz",
+          "sha256": "cba9be5bfa16dce46d635b2346b6c1e48fa40f2000cd71b0e91cd239febdc2b3"
+        }
+      }
+    },
+    {
+      "version": "1.0.11",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.11/ascii-1.0.11.tar.gz",
+          "sha256": "5fd67230c362e9e6f04bb40833c741e9c531ac397e5ef2391ffd01bbd2364780"
+        }
+      }
+    },
+    {
       "version": "1.0.10",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",

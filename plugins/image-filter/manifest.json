@@ -13,6 +13,56 @@
   ],
   "releases": [
     {
+      "version": "1.0.10",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-filter-v1.0.10/image-filter-1.0.10.tar.gz",
+          "sha256": "e1c9e40d467f877caedf6b41ada7f9b4d2bd4273420111fcdd5f16ba55cff508"
+        }
+      }
+    },
+    {
+      "version": "1.0.9",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-filter-v1.0.9/image-filter-1.0.9.tar.gz",
+          "sha256": "ef6aabee26c177e10cf4737d23441277ec0e9a78bbb18fc9a0119773576704b7"
+        }
+      }
+    },
+    {
       "version": "1.0.8",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",

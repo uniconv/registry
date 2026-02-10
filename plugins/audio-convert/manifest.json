@@ -13,6 +13,54 @@
   ],
   "releases": [
     {
+      "version": "1.1.13",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.13/audio-convert-1.1.13-linux-x86_64.tar.gz",
+          "sha256": "bf7e7fd7c1eaeaafa44e894370b9e989a07c6887f9e873fb25519ae488351cca"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.13/audio-convert-1.1.13-linux-aarch64.tar.gz",
+          "sha256": "808092fd8278b6c542a0b18d5cf19dce4c6164adfb51f6ffc57b65286805e242"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.13/audio-convert-1.1.13-darwin-aarch64.tar.gz",
+          "sha256": "66b0d957b9ff2740160882ee7387107acccbba5a9fafde88162f258102400811"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.13/audio-convert-1.1.13-windows-x86_64.tar.gz",
+          "sha256": "3975e80350dcb286673faf0220bd9e548839654473a8606b8399dcd0b7d52ffb"
+        }
+      }
+    },
+    {
+      "version": "1.1.12",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.12/audio-convert-1.1.12-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.12/audio-convert-1.1.12-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.12/audio-convert-1.1.12-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.12/audio-convert-1.1.12-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.1.11",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
