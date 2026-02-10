@@ -13,6 +13,126 @@
   ],
   "releases": [
     {
+      "version": "1.1.21",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.21/video-convert-1.1.21-linux-x86_64.tar.gz",
+          "sha256": "87470301b189740e8fb8bcbfb3146cb8f99f761d811d3487e7be01740e0e28d7"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.21/video-convert-1.1.21-linux-aarch64.tar.gz",
+          "sha256": "8b66057ddb656a8c8e27aedde518ea233f690ac4331d9e9492855e7c1ea84adf"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.21/video-convert-1.1.21-darwin-aarch64.tar.gz",
+          "sha256": "0368122a39a8d6a44273bd335d6e84200562aa43c40fb3e100b77649c1fe6578"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.21/video-convert-1.1.21-windows-x86_64.tar.gz",
+          "sha256": "b01eb80779ee9939796230f711e93634f9606891fe5f0046214a9b894185bd64"
+        }
+      }
+    },
+    {
+      "version": "1.1.20",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.20/video-convert-1.1.20-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.20/video-convert-1.1.20-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.20/video-convert-1.1.20-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.20/video-convert-1.1.20-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.19",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.19/video-convert-1.1.19-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.19/video-convert-1.1.19-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.19/video-convert-1.1.19-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.19/video-convert-1.1.19-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.18",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.18/video-convert-1.1.18-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.18/video-convert-1.1.18-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.18/video-convert-1.1.18-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.18/video-convert-1.1.18-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.17",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.17/video-convert-1.1.17-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.17/video-convert-1.1.17-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.17/video-convert-1.1.17-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/video-convert-v1.1.17/video-convert-1.1.17-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.1.16",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",

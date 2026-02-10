@@ -13,6 +13,81 @@
   ],
   "releases": [
     {
+      "version": "1.0.13",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-filter-v1.0.13/image-filter-1.0.13.tar.gz",
+          "sha256": "6e7a0083f7f1029dcd9f406bd81e84b0ee9bdf7734b5bb2caa6fbb94a152688c"
+        }
+      }
+    },
+    {
+      "version": "1.0.12",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-filter-v1.0.12/image-filter-1.0.12.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.0.11",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-filter-v1.0.11/image-filter-1.0.11.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.0.10",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",

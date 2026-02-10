@@ -15,6 +15,162 @@
   ],
   "releases": [
     {
+      "version": "1.0.27",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "imagemagick",
+          "type": "system",
+          "check": "command -v convert",
+          "install_hint": "brew install imagemagick (macOS) or apt install imagemagick (Linux)",
+          "description": "Required for PDF and BMP format support"
+        },
+        {
+          "name": "imagemagick-pdf-delegate",
+          "type": "system",
+          "check": "convert -list delegate 2>/dev/null | grep -q pdf",
+          "install_hint": "Install ghostscript or poppler, then reinstall imagemagick",
+          "description": "PDF delegate required. If missing, install ghostscript/poppler then: brew reinstall imagemagick"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.27/image-convert-1.0.27-linux-x86_64.tar.gz",
+          "sha256": "3ee9dcf4f0dbf1a51edfa54ef5a93105fa1f85fc63a78f44b13ddd0ec6198cf2"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.27/image-convert-1.0.27-linux-aarch64.tar.gz",
+          "sha256": "25e33e103b8e844588f58c06d479dad587f2ebbd586fd9dd5cef38bcbe5bada9"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.27/image-convert-1.0.27-darwin-aarch64.tar.gz",
+          "sha256": "0340bd8e60e618f0c4cd3b1cfb9c0ecf8258186db1b6dfca6cc3b7e534503703"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.27/image-convert-1.0.27-windows-x86_64.tar.gz",
+          "sha256": "b94b4125538a791d3dee2d8acea0edfa013ae34d47987b20dde7a09f13f095b7"
+        }
+      }
+    },
+    {
+      "version": "1.0.26",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "imagemagick",
+          "type": "system",
+          "check": "command -v convert",
+          "install_hint": "brew install imagemagick (macOS) or apt install imagemagick (Linux)",
+          "description": "Required for PDF and BMP format support"
+        },
+        {
+          "name": "imagemagick-pdf-delegate",
+          "type": "system",
+          "check": "convert -list delegate 2>/dev/null | grep -q pdf",
+          "install_hint": "Install ghostscript or poppler, then reinstall imagemagick",
+          "description": "PDF delegate required. If missing, install ghostscript/poppler then: brew reinstall imagemagick"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.26/image-convert-1.0.26-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.26/image-convert-1.0.26-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.26/image-convert-1.0.26-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.26/image-convert-1.0.26-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.0.25",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "imagemagick",
+          "type": "system",
+          "check": "command -v convert",
+          "install_hint": "brew install imagemagick (macOS) or apt install imagemagick (Linux)",
+          "description": "Required for PDF and BMP format support"
+        },
+        {
+          "name": "imagemagick-pdf-delegate",
+          "type": "system",
+          "check": "convert -list delegate 2>/dev/null | grep -q pdf",
+          "install_hint": "Install ghostscript or poppler, then reinstall imagemagick",
+          "description": "PDF delegate required. If missing, install ghostscript/poppler then: brew reinstall imagemagick"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.25/image-convert-1.0.25-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.25/image-convert-1.0.25-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.25/image-convert-1.0.25-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.25/image-convert-1.0.25-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.0.24",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "imagemagick",
+          "type": "system",
+          "check": "command -v convert",
+          "install_hint": "brew install imagemagick (macOS) or apt install imagemagick (Linux)",
+          "description": "Required for PDF and BMP format support"
+        },
+        {
+          "name": "imagemagick-pdf-delegate",
+          "type": "system",
+          "check": "convert -list delegate 2>/dev/null | grep -q pdf",
+          "install_hint": "Install ghostscript or poppler, then reinstall imagemagick",
+          "description": "PDF delegate required. If missing, install ghostscript/poppler then: brew reinstall imagemagick"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.24/image-convert-1.0.24-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.24/image-convert-1.0.24-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.24/image-convert-1.0.24-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.24/image-convert-1.0.24-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.0.23",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
