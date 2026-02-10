@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-10T01:58:45Z",
+  "updated_at": "2026-02-10T01:58:52Z",
   "plugins": [
     {
       "name": "ascii",
@@ -39,7 +39,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.13",
+      "latest": "1.1.16",
       "author": "uniconv",
       "interface": "native"
     },
