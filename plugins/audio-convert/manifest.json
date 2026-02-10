@@ -13,6 +13,446 @@
   ],
   "releases": [
     {
+      "version": "1.1.11",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.11/audio-convert-1.1.11-linux-x86_64.tar.gz",
+          "sha256": "5e5bda14c9820207e2266f4686b7444e180ae4dd73c50fd067f2b15db5407bbf"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.11/audio-convert-1.1.11-linux-aarch64.tar.gz",
+          "sha256": "ef3afd3c7a701ad7eb2ffe571080c1cfc2b18669ce84b8ba125b01b8ee3b6d97"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.11/audio-convert-1.1.11-darwin-aarch64.tar.gz",
+          "sha256": "42e36db90b26286ff2889cc5b45c4aa79bf11b67bea425bacc992b561c752a74"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.11/audio-convert-1.1.11-windows-x86_64.tar.gz",
+          "sha256": "009a55b01c89dce8ced80f71a532f782c9a4f7b143d5e59b756dfc0eca9a0110"
+        }
+      }
+    },
+    {
+      "version": "1.1.10",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.10/audio-convert-1.1.10-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.10/audio-convert-1.1.10-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.10/audio-convert-1.1.10-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.10/audio-convert-1.1.10-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.9",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.9/audio-convert-1.1.9-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.9/audio-convert-1.1.9-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.9/audio-convert-1.1.9-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.9/audio-convert-1.1.9-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.8",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.8/audio-convert-1.1.8-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.8/audio-convert-1.1.8-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.8/audio-convert-1.1.8-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.8/audio-convert-1.1.8-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.7",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.7/audio-convert-1.1.7-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.7/audio-convert-1.1.7-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.7/audio-convert-1.1.7-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.7/audio-convert-1.1.7-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.6",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.6/audio-convert-1.1.6-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.6/audio-convert-1.1.6-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.6/audio-convert-1.1.6-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.6/audio-convert-1.1.6-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.5",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.5/audio-convert-1.1.5-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.5/audio-convert-1.1.5-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.5/audio-convert-1.1.5-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.5/audio-convert-1.1.5-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
+      "version": "1.1.4",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [
+        {
+          "name": "libavformat-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavformat",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavformat-dev (Linux)"
+        },
+        {
+          "name": "libavcodec-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavcodec",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavcodec-dev (Linux)"
+        },
+        {
+          "name": "libavutil-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavutil",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavutil-dev (Linux)"
+        },
+        {
+          "name": "libswresample-dev",
+          "type": "system",
+          "check": "pkg-config --exists libswresample",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libswresample-dev (Linux)"
+        },
+        {
+          "name": "libavfilter-dev",
+          "type": "system",
+          "check": "pkg-config --exists libavfilter",
+          "install_hint": "brew install ffmpeg (macOS) or apt install libavfilter-dev (Linux)"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.4/audio-convert-1.1.4-linux-x86_64.tar.gz",
+          "sha256": ""
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.4/audio-convert-1.1.4-linux-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.4/audio-convert-1.1.4-darwin-aarch64.tar.gz",
+          "sha256": ""
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.4/audio-convert-1.1.4-windows-x86_64.tar.gz",
+          "sha256": ""
+        }
+      }
+    },
+    {
       "version": "1.1.3",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
