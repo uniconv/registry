@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-10T15:33:48Z",
+  "updated_at": "2026-02-10T23:21:13Z",
   "plugins": [
     {
       "name": "ascii",
@@ -55,7 +55,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.27",
+      "latest": "1.0.29",
       "author": "uniconv",
       "interface": "native"
     },
