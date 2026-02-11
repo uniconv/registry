@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-11T02:05:18Z",
+  "updated_at": "2026-02-11T02:59:25Z",
   "plugins": [
     {
       "name": "ascii",
@@ -104,7 +104,7 @@
         "tsv",
         "conversion"
       ],
-      "latest": "1.0.6",
+      "latest": "1.0.7",
       "author": "uniconv",
       "interface": "cli"
     },
