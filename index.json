@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-12T12:59:10Z",
+  "updated_at": "2026-02-12T14:36:37Z",
   "plugins": [
     {
       "name": "ascii",
@@ -143,20 +143,16 @@
     },
     {
       "name": "archive",
-      "description": "Archive and compression support (zip, tar, gz, bz2, xz, 7z)",
+      "description": "Archive format conversion (zip, tar, gz, bz2, xz, 7z)",
       "keywords": [
-        "archive",
         "zip",
         "tar",
         "gz",
         "bz2",
         "xz",
-        "7z",
-        "compress",
-        "decompress",
-        "extract"
+        "7z"
       ],
-      "latest": "1.0.19",
+      "latest": "1.0.20",
       "author": "uniconv",
       "interface": "cli"
     }
