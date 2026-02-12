@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-12T12:27:11Z",
+  "updated_at": "2026-02-12T12:59:10Z",
   "plugins": [
     {
       "name": "ascii",
@@ -156,7 +156,7 @@
         "decompress",
         "extract"
       ],
-      "latest": "1.0.18",
+      "latest": "1.0.19",
       "author": "uniconv",
       "interface": "cli"
     }
