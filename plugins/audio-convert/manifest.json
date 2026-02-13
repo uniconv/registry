@@ -1,5 +1,6 @@
 {
   "name": "audio-convert",
+  "scope": "uniconv",
   "description": "Audio format conversion and audio extraction from video (mp3, wav, flac, aac, ogg, opus, m4a, wma, aiff, alac, ac3)",
   "author": "uniconv",
   "license": "MIT",
@@ -12,6 +13,30 @@
     "ffmpeg"
   ],
   "releases": [
+    {
+      "version": "1.1.26",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.26/audio-convert-1.1.26-linux-x86_64.tar.gz",
+          "sha256": "911e61578fb37fd747b354f7bb9ff98d7fede3b3e101385105d0194ef11a0742"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.26/audio-convert-1.1.26-linux-aarch64.tar.gz",
+          "sha256": "91bdc732149668fc6807edeed9bb01761b8d5b9c014a1955022a89fe70d1e957"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.26/audio-convert-1.1.26-darwin-aarch64.tar.gz",
+          "sha256": "1ae73d45f9921e3ddb5928a878a7725e6ccf74ab555fbcdec1d194e04c012762"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.26/audio-convert-1.1.26-windows-x86_64.tar.gz",
+          "sha256": "6d1c15788fa6cad9231e8c9e184498f509729b031ff52b30e89e341aecdcbf84"
+        }
+      }
+    },
     {
       "version": "1.1.25",
       "uniconv_compat": ">=0.1.0",

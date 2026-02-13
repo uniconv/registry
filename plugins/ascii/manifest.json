@@ -1,5 +1,6 @@
 {
   "name": "ascii",
+  "scope": "uniconv",
   "description": "Convert media to ASCII representation",
   "author": "uniconv",
   "license": "MIT",
@@ -11,6 +12,31 @@
     "conversion"
   ],
   "releases": [
+    {
+      "version": "1.0.25",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "version": ">=9.0",
+          "install_hint": "pip install Pillow"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/ascii-v1.0.25/ascii-1.0.25.tar.gz",
+          "sha256": "6321a8028a031bd88719a4bb9f7c5b36c79bcb191579bd484dc5ff1d0cc07f96"
+        }
+      }
+    },
     {
       "version": "1.0.24",
       "uniconv_compat": ">=0.1.0",

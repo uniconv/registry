@@ -1,5 +1,6 @@
 {
   "name": "generator",
+  "scope": "uniconv",
   "description": "Generate random test data: noise images, fake names, URLs, lorem ipsum, UUIDs, passwords, and CSV",
   "author": "uniconv",
   "license": "MIT",
@@ -16,6 +17,37 @@
     "test-data"
   ],
   "releases": [
+    {
+      "version": "1.0.17",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "description": "Required for random-noise image generation",
+          "install_hint": "pip install Pillow"
+        },
+        {
+          "name": "faker",
+          "type": "python",
+          "description": "Required for generating fake data (names, URLs, lorem, CSV)",
+          "install_hint": "pip install faker"
+        }
+      ],
+      "artifact": {
+        "any": {
+          "url": "https://github.com/uniconv/plugins/releases/download/generator-v1.0.17/generator-1.0.17.tar.gz",
+          "sha256": "4cc617bfdc6f08953b093e3296c19bf14d96bc442587319080e6db4cbc3b3546"
+        }
+      }
+    },
     {
       "version": "1.0.16",
       "uniconv_compat": ">=0.1.0",
