@@ -66,11 +66,13 @@ update_one_plugin() {
     curl -sL "$manifest_url" -o "$tmpdir/manifest.json"
 
     # Extract metadata from the fetched manifest
-    local version interface
+    local version interface scope
     version=$(python3 -c "import json; m=json.load(open('$tmpdir/manifest.json')); print(m['releases'][0]['version'])")
     interface=$(python3 -c "import json; m=json.load(open('$tmpdir/manifest.json')); print(m['releases'][0]['interface'])")
+    scope=$(python3 -c "import json; m=json.load(open('$tmpdir/manifest.json')); print(m.get('scope', m['name']))")
 
     echo "  Plugin:    $plugin"
+    echo "  Scope:     $scope"
     echo "  Latest:    $version"
     echo "  Interface: $interface"
     echo ""
@@ -109,6 +111,7 @@ version = sys.argv[2]
 interface = sys.argv[3]
 manifest_path = sys.argv[4]
 index_path = sys.argv[5]
+scope = sys.argv[6]
 
 with open(index_path) as f:
     index = json.load(f)
@@ -127,6 +130,7 @@ for entry in index['plugins']:
         break
 
 if existing:
+    existing['scope'] = scope
     existing['latest'] = version
     existing['description'] = description
     existing['keywords'] = keywords
@@ -134,6 +138,7 @@ if existing:
 else:
     index['plugins'].append({
         'name': name,
+        'scope': scope,
         'description': description,
         'keywords': keywords,
         'latest': version,
@@ -147,7 +152,7 @@ index['updated_at'] = datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 with open(index_path, 'w') as f:
     json.dump(index, f, indent=2)
     f.write('\n')
-" "$plugin" "$version" "$interface" "$tmpdir/manifest.json" "$index_file"
+" "$plugin" "$version" "$interface" "$tmpdir/manifest.json" "$index_file" "$scope"
     fi
     echo ""
 

@@ -4,6 +4,7 @@
   "plugins": [
     {
       "name": "ascii",
+      "scope": "uniconv",
       "description": "Convert media to ASCII representation",
       "keywords": [
         "image",
@@ -17,6 +18,7 @@
     },
     {
       "name": "image-filter",
+      "scope": "uniconv",
       "description": "Apply image filters (grayscale, invert) using Python/Pillow",
       "keywords": [
         "image",
@@ -31,6 +33,7 @@
     },
     {
       "name": "video-convert",
+      "scope": "uniconv",
       "description": "Bidirectional video format conversion (mp4, mov, avi, webm, mkv, m4v, gif)",
       "keywords": [
         "video",
@@ -45,6 +48,7 @@
     },
     {
       "name": "image-convert",
+      "scope": "uniconv",
       "description": "Image format conversion using libvips",
       "keywords": [
         "image",
@@ -61,6 +65,7 @@
     },
     {
       "name": "doc-convert",
+      "scope": "uniconv",
       "description": "Convert between document formats using LibreOffice",
       "keywords": [
         "document",
@@ -79,6 +84,7 @@
     },
     {
       "name": "audio-convert",
+      "scope": "uniconv",
       "description": "Audio format conversion and audio extraction from video (mp3, wav, flac, aac, ogg, opus, m4a, wma, aiff, alac, ac3)",
       "keywords": [
         "audio",
@@ -93,6 +99,7 @@
     },
     {
       "name": "data-convert",
+      "scope": "uniconv",
       "description": "Convert between structured data formats (JSON, YAML, TOML, XML, CSV)",
       "keywords": [
         "data",
@@ -110,6 +117,7 @@
     },
     {
       "name": "qr-code",
+      "scope": "uniconv",
       "description": "Generate and decode QR codes",
       "keywords": [
         "qr",
@@ -125,6 +133,7 @@
     },
     {
       "name": "generator",
+      "scope": "uniconv",
       "description": "Generate random test data: noise images, fake names, URLs, lorem ipsum, UUIDs, passwords, and CSV",
       "keywords": [
         "generator",
@@ -143,6 +152,7 @@
     },
     {
       "name": "archive",
+      "scope": "uniconv",
       "description": "Archive format conversion (zip, tar, gz, bz2, xz, 7z)",
       "keywords": [
         "zip",
