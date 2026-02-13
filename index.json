@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated_at": "2026-02-13T01:32:32Z",
+  "updated_at": "2026-02-13T03:49:21Z",
   "plugins": [
     {
       "name": "ascii",
-      "scope": "uniconv",
+      "scope": "ascii",
       "description": "Convert media to ASCII representation",
       "keywords": [
         "image",
@@ -18,7 +18,7 @@
     },
     {
       "name": "image-filter",
-      "scope": "uniconv",
+      "scope": "image-filter",
       "description": "Apply image filters (grayscale, invert) using Python/Pillow",
       "keywords": [
         "image",
@@ -33,7 +33,7 @@
     },
     {
       "name": "video-convert",
-      "scope": "uniconv",
+      "scope": "video-convert",
       "description": "Bidirectional video format conversion (mp4, mov, avi, webm, mkv, m4v, gif)",
       "keywords": [
         "video",
@@ -48,7 +48,7 @@
     },
     {
       "name": "image-convert",
-      "scope": "uniconv",
+      "scope": "image-convert",
       "description": "Image format conversion using libvips",
       "keywords": [
         "image",
@@ -65,7 +65,7 @@
     },
     {
       "name": "doc-convert",
-      "scope": "uniconv",
+      "scope": "doc-convert",
       "description": "Convert between document formats using LibreOffice",
       "keywords": [
         "document",
@@ -84,7 +84,7 @@
     },
     {
       "name": "audio-convert",
-      "scope": "uniconv",
+      "scope": "audio-convert",
       "description": "Audio format conversion and audio extraction from video (mp3, wav, flac, aac, ogg, opus, m4a, wma, aiff, alac, ac3)",
       "keywords": [
         "audio",
@@ -99,7 +99,7 @@
     },
     {
       "name": "data-convert",
-      "scope": "uniconv",
+      "scope": "data-convert",
       "description": "Convert between structured data formats (JSON, YAML, TOML, XML, CSV)",
       "keywords": [
         "data",
@@ -117,7 +117,7 @@
     },
     {
       "name": "qr-code",
-      "scope": "uniconv",
+      "scope": "qr-code",
       "description": "Generate and decode QR codes",
       "keywords": [
         "qr",
@@ -133,7 +133,7 @@
     },
     {
       "name": "generator",
-      "scope": "uniconv",
+      "scope": "generator",
       "description": "Generate random test data: noise images, fake names, URLs, lorem ipsum, UUIDs, passwords, and CSV",
       "keywords": [
         "generator",
@@ -152,7 +152,7 @@
     },
     {
       "name": "archive",
-      "scope": "uniconv",
+      "scope": "archive",
       "description": "Archive format conversion (zip, tar, gz, bz2, xz, 7z)",
       "keywords": [
         "zip",
