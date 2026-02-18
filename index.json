@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-18T08:34:49Z",
+  "updated_at": "2026-02-18T08:47:47Z",
   "plugins": [
     {
       "name": "ascii",
@@ -28,7 +28,7 @@
         "filter",
         "conversion"
       ],
-      "latest": "1.0.22",
+      "latest": "1.0.23",
       "author": "uniconv",
       "interface": "cli"
     },
