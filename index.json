@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-18T07:22:47Z",
+  "updated_at": "2026-02-18T08:34:49Z",
   "plugins": [
     {
       "name": "ascii",
@@ -19,15 +19,16 @@
     {
       "name": "image-filter",
       "scope": "uniconv",
-      "description": "Apply image filters (grayscale, invert) using Python/Pillow",
+      "description": "Apply image filters (grayscale, invert, rembg) using Python/Pillow",
       "keywords": [
         "image",
         "grayscale",
         "invert",
+        "rembg",
         "filter",
         "conversion"
       ],
-      "latest": "1.0.21",
+      "latest": "1.0.22",
       "author": "uniconv",
       "interface": "cli"
     },
