@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-18T08:47:47Z",
+  "updated_at": "2026-02-25T13:53:17Z",
   "plugins": [
     {
       "name": "ascii",
@@ -164,6 +164,25 @@
         "7z"
       ],
       "latest": "1.0.21",
+      "author": "uniconv",
+      "interface": "cli"
+    },
+    {
+      "name": "tts",
+      "scope": "uniconv",
+      "description": "Text-to-speech using cloud AI providers (OpenAI, ElevenLabs, Typecast, Gemini)",
+      "keywords": [
+        "tts",
+        "text-to-speech",
+        "speech",
+        "audio",
+        "openai",
+        "elevenlabs",
+        "typecast",
+        "gemini",
+        "ai"
+      ],
+      "latest": "1.0.0",
       "author": "uniconv",
       "interface": "cli"
     }
