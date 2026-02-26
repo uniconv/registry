@@ -15,6 +15,55 @@
   ],
   "releases": [
     {
+      "version": "1.0.20",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "cli",
+      "dependencies": [
+        {
+          "name": "python3",
+          "type": "system",
+          "version": ">=3.8",
+          "install_hint": "brew install python3 (macOS) or apt install python3 (Linux)"
+        },
+        {
+          "name": "segno",
+          "type": "python",
+          "description": "Required for QR code generation",
+          "install_hint": "pip install segno"
+        },
+        {
+          "name": "Pillow",
+          "type": "python",
+          "description": "Required for QR code decoding",
+          "install_hint": "pip install Pillow"
+        },
+        {
+          "name": "pyzbar",
+          "type": "python",
+          "description": "Required for QR code decoding",
+          "install_hint": "pip install pyzbar"
+        }
+      ],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-linux-x86_64.tar.gz",
+          "sha256": "1173840f7a880adb38105c5af5ea99686272704e24102fdb03819b719131e261"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-linux-aarch64.tar.gz",
+          "sha256": "6af1d4acaea90b3180d1adb9c0ca08a2af953c4449ba516da0d7379a41a99926"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-darwin-aarch64.tar.gz",
+          "sha256": "afa835947ad22353334649cabb5badc9f7bf80575fd4bbebe2b474763aac7f84"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-windows-x86_64.tar.gz",
+          "sha256": "d16733eb76f2903c4fb285fd8e8bba91efd014144f5ede0198a4c0d1e41fde9e"
+        }
+      }
+    },
+    {
       "version": "1.0.19",
       "uniconv_compat": ">=0.1.0",
       "interface": "cli",

@@ -14,6 +14,30 @@
   ],
   "releases": [
     {
+      "version": "1.1.27",
+      "uniconv_compat": ">=0.1.0",
+      "interface": "native",
+      "dependencies": [],
+      "artifact": {
+        "linux-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-linux-x86_64.tar.gz",
+          "sha256": "464e502c9bc7f9bac911d62c99c074499d65c571beab479495bc11053fb9883e"
+        },
+        "linux-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-linux-aarch64.tar.gz",
+          "sha256": "9d9ee33b75cdd4216bc4a7f710df650b5ae2b43d9946dd650843307d5504a487"
+        },
+        "darwin-aarch64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-darwin-aarch64.tar.gz",
+          "sha256": "961722ed8133282cd0a1b5b551581f2e6cff404a074e0dd665c88ea4665dea2b"
+        },
+        "windows-x86_64": {
+          "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-windows-x86_64.tar.gz",
+          "sha256": "01415ad79697dcb1195c79ac785b4015c5262e2159122066bf2781fc9e6b7471"
+        }
+      }
+    },
+    {
       "version": "1.1.26",
       "uniconv_compat": ">=0.1.0",
       "interface": "native",
