@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-27T03:48:51Z",
+  "updated_at": "2026-02-27T14:24:41Z",
   "plugins": [
     {
       "name": "ascii",
@@ -12,7 +12,7 @@
         "text-art",
         "conversion"
       ],
-      "latest": "1.0.26",
+      "latest": "1.0.27",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -28,7 +28,7 @@
         "filter",
         "conversion"
       ],
-      "latest": "1.0.24",
+      "latest": "1.0.25",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -43,7 +43,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.30",
+      "latest": "1.1.31",
       "author": "uniconv",
       "interface": "native"
     },
@@ -60,7 +60,7 @@
         "heic",
         "conversion"
       ],
-      "latest": "1.0.48",
+      "latest": "1.0.49",
       "author": "uniconv",
       "interface": "native"
     },
@@ -79,7 +79,7 @@
         "hwp",
         "conversion"
       ],
-      "latest": "1.0.32",
+      "latest": "1.0.34",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -94,7 +94,7 @@
         "conversion",
         "ffmpeg"
       ],
-      "latest": "1.1.27",
+      "latest": "1.1.28",
       "author": "uniconv",
       "interface": "native"
     },
@@ -112,7 +112,7 @@
         "tsv",
         "conversion"
       ],
-      "latest": "1.0.17",
+      "latest": "1.0.18",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -128,7 +128,7 @@
         "encode",
         "decode"
       ],
-      "latest": "1.0.20",
+      "latest": "1.0.21",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -147,7 +147,7 @@
         "lorem",
         "test-data"
       ],
-      "latest": "1.0.18",
+      "latest": "1.0.19",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -163,7 +163,7 @@
         "xz",
         "7z"
       ],
-      "latest": "1.0.22",
+      "latest": "1.0.23",
       "author": "uniconv",
       "interface": "cli"
     },
@@ -182,7 +182,7 @@
         "gemini",
         "ai"
       ],
-      "latest": "1.0.1",
+      "latest": "1.0.2",
       "author": "uniconv",
       "interface": "cli"
     }
