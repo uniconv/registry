@@ -47,19 +47,19 @@
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-linux-x86_64.tar.gz",
-          "sha256": "1173840f7a880adb38105c5af5ea99686272704e24102fdb03819b719131e261"
+          "sha256": "507fe243abe6e53710f19167bc3ffbfdcf8ba89ce63305afa50c59a758701309"
         },
         "linux-aarch64": {
           "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-linux-aarch64.tar.gz",
-          "sha256": "6af1d4acaea90b3180d1adb9c0ca08a2af953c4449ba516da0d7379a41a99926"
+          "sha256": "8afa800058e399ca0388e305b425572e6bbe97f2a1dd0fc7f21499139592b28c"
         },
         "darwin-aarch64": {
           "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-darwin-aarch64.tar.gz",
-          "sha256": "afa835947ad22353334649cabb5badc9f7bf80575fd4bbebe2b474763aac7f84"
+          "sha256": "191fea2a874975f52d8de9d68bd13f5211a8129f9820dd356b569c7860ec7cfb"
         },
         "windows-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/qr-code-v1.0.20/qr-code-1.0.20-windows-x86_64.tar.gz",
-          "sha256": "d16733eb76f2903c4fb285fd8e8bba91efd014144f5ede0198a4c0d1e41fde9e"
+          "sha256": "0d902ee374bf829b13a00497ad0fb9659326376ff2f5f3b4dcd8cb44aa7307c8"
         }
       }
     },

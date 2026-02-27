@@ -23,19 +23,19 @@
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.48/image-convert-1.0.48-linux-x86_64.tar.gz",
-          "sha256": "84e17e591bd659dacfdb4d4da29aa79d1de26731fff6f76dc0b42c01b275f424"
+          "sha256": "3dd662042fc4a4181f708c078820f2a61ff6567c89009c2860c4a382e6f3f153"
         },
         "linux-aarch64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.48/image-convert-1.0.48-linux-aarch64.tar.gz",
-          "sha256": "2e182021678697ef1edfe89ad706561ed7fcb23c897137012566ea54c4e42bfc"
+          "sha256": "4dd40d6ea810773a292df7c7b3d60d52d86e64db9901a498ce7fdde6cd6ac4f9"
         },
         "darwin-aarch64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.48/image-convert-1.0.48-darwin-aarch64.tar.gz",
-          "sha256": "a51887154e7e8e740ae2af98cdc45d421c6788780a1f19d03326e0d6b09a49ea"
+          "sha256": "103fcf4845c7f248fe5370cbf61775e9605d81cf394da2461f319f96662bfeb2"
         },
         "windows-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/image-convert-v1.0.48/image-convert-1.0.48-windows-x86_64.tar.gz",
-          "sha256": "d50e74830a71631c92275d8afb346688747fcfe62d457a44da7d39bfc7a6906b"
+          "sha256": "6b40edf12861f0f6ad9c2ba540b45a9d74844f0864e2e04286b2ef1017df01df"
         }
       }
     },

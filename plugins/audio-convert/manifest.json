@@ -21,19 +21,19 @@
       "artifact": {
         "linux-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-linux-x86_64.tar.gz",
-          "sha256": "464e502c9bc7f9bac911d62c99c074499d65c571beab479495bc11053fb9883e"
+          "sha256": "1e4d6da6c0b4e0892a28f0032d9245e735462a4e25d4bcb845c2867f32255bc2"
         },
         "linux-aarch64": {
           "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-linux-aarch64.tar.gz",
-          "sha256": "9d9ee33b75cdd4216bc4a7f710df650b5ae2b43d9946dd650843307d5504a487"
+          "sha256": "d14426dc3f3f4af38a82fb034c43fe39f5a12017a6ba480e7594de763c65863d"
         },
         "darwin-aarch64": {
           "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-darwin-aarch64.tar.gz",
-          "sha256": "961722ed8133282cd0a1b5b551581f2e6cff404a074e0dd665c88ea4665dea2b"
+          "sha256": "2bcf812f3c022b07dd9a3d2832ca15c1e92a552bc315cbe01ae2521861d3a058"
         },
         "windows-x86_64": {
           "url": "https://github.com/uniconv/plugins/releases/download/audio-convert-v1.1.27/audio-convert-1.1.27-windows-x86_64.tar.gz",
-          "sha256": "01415ad79697dcb1195c79ac785b4015c5262e2159122066bf2781fc9e6b7471"
+          "sha256": "6ad721a0d7c27bad8f3f1785ab0e4309e9e67b476c76edf7c51a2239522d31b5"
         }
       }
     },
